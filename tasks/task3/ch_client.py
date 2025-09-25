@@ -1,13 +1,14 @@
 import asyncio
-from typing import List, Iterator
-from datetime import date, datetime
-from aiochclient import ChClient
-from aiohttp import ClientSession, ClientError
 import itertools
+from datetime import date, datetime
+from typing import Iterator, List
+
+from aiochclient import ChClient
+from aiohttp import ClientError, ClientSession
 
 from tasks.task2.data_objects import Repository
-from tasks.task3.loggers import logger
 from tasks.task3.config import settings
+from tasks.task3.loggers import logger
 
 
 class ClickHouseClient:

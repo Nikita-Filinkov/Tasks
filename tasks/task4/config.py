@@ -1,6 +1,7 @@
-from pydantic import PositiveInt, Field
-from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Literal
+
+from pydantic import Field, PositiveInt
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):

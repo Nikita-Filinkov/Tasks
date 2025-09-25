@@ -1,9 +1,9 @@
 import asyncio
-from datetime import datetime
 from contextlib import AsyncExitStack
+from datetime import datetime
 
-from tasks.task2.scrapper import GithubReposScrapper
 from tasks.task2.config import settings as scraper_settings
+from tasks.task2.scrapper import GithubReposScrapper
 from tasks.task3.ch_client import ClickHouseClient
 from tasks.task3.database_init import DatabaseInitializer
 from tasks.task3.loggers import logger

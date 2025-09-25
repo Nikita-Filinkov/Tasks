@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from tasks.task3.ch_client import ClickHouseClient
 from tasks.task3.loggers import logger
 

@@ -1,6 +1,6 @@
-from dataclasses import dataclass, astuple
+from dataclasses import astuple, dataclass
+from datetime import date, datetime
 from typing import List
-from datetime import datetime, date
 
 
 @dataclass

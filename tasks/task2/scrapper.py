@@ -1,10 +1,11 @@
 import asyncio
-from datetime import datetime, timezone, timedelta
-from typing import Final, Any
-from aiohttp import ClientSession, ClientTimeout, ClientError
+from datetime import datetime, timedelta, timezone
+from typing import Any, Final
+
+from aiohttp import ClientError, ClientSession, ClientTimeout
 
 from tasks.task2.config import settings
-from tasks.task2.data_objects import RepositoryAuthorCommitsNum, Repository
+from tasks.task2.data_objects import Repository, RepositoryAuthorCommitsNum
 from tasks.task2.limiters import SimpleRateLimiter
 from tasks.task2.loggers import logger
 

@@ -1,6 +1,7 @@
-from fastapi import FastAPI, APIRouter, Depends
 from typing import Annotated
+
 import asyncpg
+from fastapi import APIRouter, Depends, FastAPI
 
 from tasks.task1.dependecies import get_pg_connection
 from tasks.task1.exeptions import BaseRequestException, UnexpectedException

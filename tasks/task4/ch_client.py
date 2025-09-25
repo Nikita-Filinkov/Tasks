@@ -1,7 +1,8 @@
 from aiochclient import ChClient
 from aiohttp import ClientSession
-from tasks.task4.loggers import logger
+
 from tasks.task4.config import settings
+from tasks.task4.loggers import logger
 
 
 class ClickHouseClient:
